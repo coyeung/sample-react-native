@@ -57,7 +57,6 @@ export default function HomeScreen({navigation}) {
             }
             else return json;
         }).then(function(json) {
-            console.log(json);
             setConsltData(json);
         }).catch((error) => {
             setError(error.message);
@@ -100,8 +99,7 @@ export default function HomeScreen({navigation}) {
                 backImage = {() => false}
                 onPress = {_logout}
             />
-          ),
-          headerTitle: authState.user.email
+          )
         });
     }, [navigation]);
 

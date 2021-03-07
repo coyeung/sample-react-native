@@ -27,7 +27,6 @@ export default function DetailScreen({route, navigation}) {
             }
             else return json;
         }).then(function(json) {
-            console.log(json);
             setConsltDetail(json);
         }).catch((error) => {
             setError(error.message);

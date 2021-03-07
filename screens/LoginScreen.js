@@ -49,7 +49,6 @@ export default function LoginScreen(props) {
       }
       else return json;
     }).then(function(json) {
-      console.log(json);
       dispatch({
         type: 'LOGIN', 
         user: json,

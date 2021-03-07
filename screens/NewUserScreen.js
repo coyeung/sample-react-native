@@ -39,7 +39,6 @@ export default function NewUserScreen(props) {
     }).then(async function(res) {
       let json = await res.json();
       if(res.status !== 200) {
-        console.log(json);
         throw new Error(json.message);
       }
       else return json;
