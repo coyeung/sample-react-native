@@ -13,6 +13,7 @@
 
 ## 🚀 How to use
 
+- Edit `config/NetworkConfig` for server URL
 - Install packages with `yarn` or `npm install`.
 - Run `yarn` or `npm start` to start the bundler.
 - Open the project in a React runtime to try it:
